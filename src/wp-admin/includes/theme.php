@@ -246,7 +246,7 @@ function get_theme_update_available( $theme ) {
 			} else {
 				$html = sprintf(
 					/* translators: 1: Theme name, 2: Theme details URL, 3: Additional link attributes, 4: Version number, 5: Update URL, 6: Additional link attributes. */
-					'<p><strong>' . __( 'There is a new version of %1$s available. <a href="%2$s" %3$s>View version %4$s details</a> or <a href="%5$s" %6$s>update now</a>.' ) . '</strong></p>',
+					'<p><strong>' . __( 'There is a new version of %1$s available. <a href="%2$s" %3$s>View version %4$s details</a> or <a href="%5$s" %6$s>Update now</a>.' ) . '</strong></p>',
 					$theme_name,
 					esc_url( $details_url ),
 					sprintf(
@@ -979,7 +979,7 @@ function customize_themes_print_templates() {
 								if ( current_user_can( 'update_core' ) && current_user_can( 'update_php' ) ) {
 									printf(
 										/* translators: 1: URL to WordPress Updates screen, 2: URL to Update PHP page. */
-										' ' . __( '<a href="%1$s">Please update WordPress</a>, and then <a href="%2$s">learn more about updating PHP</a>.' ),
+										' ' . __( '<a href="%1$s">Please update WordPress</a>, and then <a href="%2$s">Learn more about updating PHP</a>.' ),
 										self_admin_url( 'update-core.php' ),
 										esc_url( wp_get_update_php_url() )
 									);
